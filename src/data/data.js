@@ -44,7 +44,6 @@ export const skills = {
     { name: "JavaScript", level: 70 },
     { name: "Python", level: 70 },
     { name: "Laravel", level: 78, color: "#1460cc" },
-    { name: "Next JS", level: 60, color: "#0f4ba0" },
     { name: "MySQL / Database", level: 75 },
   ],
   cyber: [
