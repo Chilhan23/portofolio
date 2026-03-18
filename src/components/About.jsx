@@ -51,7 +51,7 @@ const About = () => {
               Halo, perkenalkan saya <span style={{ color: "#1a7aff" }}>Rayhan</span>. Saat ini saya menempuh pendidikan di <span style={{ color: "#1a7aff" }}>SMK 5 Telkom Banda Aceh</span>, jurusan Rekayasa Perangkat Lunak.
             </p>
             <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
-              Saya memiliki pengalaman kerja sebagai <span style={{ color: "#1a7aff" }}>Web Developer</span> selama 2 tahun (sejak tahun 2024 hingga saat ini), dan telah berhasil mengembangkan serta merilis <span style={{ color: "#1a7aff" }}>2 proyek</span> aplikasi web.
+              Saya memiliki pengalaman  sebagai <span style={{ color: "#1a7aff" }}>Web Developer</span> selama 2 tahun (sejak tahun 2024 hingga saat ini), dan telah berhasil mengembangkan  <span style={{ color: "#1a7aff" }}>2 proyek</span> aplikasi web di SMK Negeri 5 Telkom Banda Aceh.
             </p>
             <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
               Selain pengembangan perangkat lunak, saya memiliki minat yang mendalam pada bidang <span style={{ color: "#1a7aff" }}>Cyber Security</span>, dengan fokus spesialisasi pada <span style={{ color: "#1a7aff" }}>Digital Forensics</span> dan Incident Response untuk analisis memori.
