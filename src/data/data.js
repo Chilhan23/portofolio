@@ -9,7 +9,7 @@ export const projects = [
     title: "Perpustakaan Digital",
     desc: "Sistem manajemen perpustakaan digital yang memudahkan pengelolaan koleksi buku dan peminjaman secara online.",
     url: "https://perpus.chilhan.my.id/",
-    github: "https://github.com/Chilhan23/Perpus-Digital.git", // Ganti dengan URL repo aslimu
+    github: "https://github.com/Chilhan23/Perpus-Digital.git",
     tags: ["Web App", "Library", "CRUD"],
     live: true,
   },
@@ -17,7 +17,7 @@ export const projects = [
     title: "Suara Siswa",
     desc: "Platform aspirasi dan suara siswa untuk menyampaikan pendapat dan masukan kepada pihak sekolah secara digital.",
     url: "https://suarasiswa.chilhan.my.id/",
-    github: "https://github.com/Chilhan23/suarasiswa.git", // Ganti dengan URL repo aslimu
+    github: "https://github.com/Chilhan23/suarasiswa.git", 
     tags: ["Platform", "Student", "Voice"],
     live: true,
   },
@@ -25,7 +25,7 @@ export const projects = [
     title: "WebChat Real-Time",
     desc: "Aplikasi chat real-time yang dibangun untuk seru-seruan. Fitur: pesan instan, typing indicator, user counter online, dan timestamp. Pesan tidak tersimpan — fresh setiap sesi!",
     url: null,
-    github: "https://github.com/Chilhan23/Web_Chat_SocketIo.git", // Ganti dengan URL repo aslimu
+    github: "https://github.com/Chilhan23/Web_Chat_SocketIo.git", 
     tags: ["Node.js", "Express", "Socket.io", "Real-Time"],
     live: false,
   },
@@ -51,7 +51,7 @@ export const skills = {
     { name: "Linux / CLI", level: 70 },
     { name: "Networking Basics", level: 65, color: "#1460cc" },
     { name: "Digital Forensic", level: 75, color: "#0f4ba0" },
-    { name: "Git / GitHub", level: 80 },
+    { name: "Git / GitHub", level: 70 },
   ],
 };
 
