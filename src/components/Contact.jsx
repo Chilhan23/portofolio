@@ -15,9 +15,6 @@ const Contact = () => {
             get_in_touch<span style={{ color: "#1a7aff" }}>_</span>
           </h2>
         </div>
-        <p style={{ color: "#6b7280", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "2.5rem", maxWidth: "36rem" }}>
-          Tertarik untuk kolaborasi atau punya project keren?<br />Jangan ragu untuk reach out!
-        </p>
         <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: "1rem" }}>
           {links.map(({ label, url, icon, soon }) => (
             <a key={label} href={url} target="_blank" rel="noopener noreferrer"

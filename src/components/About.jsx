@@ -48,15 +48,13 @@ const About = () => {
           {/* Text + stats */}
           <div>
             <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
-              Halo! Aku <span style={{ color: "#1a7aff" }}>Rayhan</span>, siswa SMK 5 Telkom Banda Aceh jurusan Rekayasa Perangkat Lunak.
+              Halo, perkenalkan saya <span style={{ color: "#1a7aff" }}>Rayhan</span>. Saat ini saya menempuh pendidikan di <span style={{ color: "#1a7aff" }}>SMK 5 Telkom Banda Aceh</span>, jurusan Rekayasa Perangkat Lunak.
             </p>
             <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
-              Dengan pengalaman <span style={{ color: "#1a7aff" }}>2+ tahun</span> di bidang Web Development, aku passionate dalam membangun aplikasi web yang fungsional dan berdampak nyata.
+              Saya memiliki pengalaman kerja sebagai <span style={{ color: "#1a7aff" }}>Web Developer</span> selama 2 tahun (sejak tahun 2024 hingga saat ini), dan telah berhasil mengembangkan serta merilis <span style={{ color: "#1a7aff" }}>2 proyek</span> aplikasi web.
             </p>
             <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
-              Selain web, aku juga tertarik di dunia <span style={{ color: "#1a7aff" }}>Cyber Security</span> — karena web yang bagus harus juga web yang aman.
-            </p> <p style={{ color: "#9ca3af", fontFamily: "monospace", fontSize: "0.875rem", lineHeight: "2", marginBottom: "1.25rem" }}>
-             aku juga tertarik di dunia <span style={{ color: "#1a7aff" }}>Digital Forensic Insident Response</span> Terutama Dibagian Memory  Analys.
+              Selain pengembangan perangkat lunak, saya memiliki minat yang mendalam pada bidang <span style={{ color: "#1a7aff" }}>Cyber Security</span>, dengan fokus spesialisasi pada <span style={{ color: "#1a7aff" }}>Digital Forensics</span> dan Incident Response untuk analisis memori.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem", paddingTop: "1rem" }}>
               {[["2", "Years Exp"], ["2", "Projects Live"], ["5", "Certificates"]].map(([num, label]) => (

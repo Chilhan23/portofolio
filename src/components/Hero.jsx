@@ -80,7 +80,7 @@ const Hero = () => {
               className="hero-text glitch-main"
               style={{ fontSize: "clamp(2.8rem, 8vw, 6rem)", lineHeight: 1, color: "#fff", fontWeight: "700", margin: 0, letterSpacing: "-0.02em" }}
             >
-              chilhan
+              Rayhan
             </h1>
             <span className="glitch-layer-1 hero-text" style={{ fontSize: "clamp(2.8rem, 8vw, 6rem)", lineHeight: 1, fontWeight: "700", letterSpacing: "-0.02em" }}>RAYHAN</span>
             <span className="glitch-layer-2 hero-text" style={{ fontSize: "clamp(2.8rem, 8vw, 6rem)", lineHeight: 1, fontWeight: "700", letterSpacing: "-0.02em" }}>RAYHAN</span>
@@ -104,7 +104,7 @@ const Hero = () => {
         <p style={{ margin: "0 auto 2.5rem", color: "#4b5563", fontFamily: "monospace", fontSize: "0.8rem", lineHeight: "1.8", maxWidth: "380px" }}>
           Siswa RPL @ <span style={{ color: "#1a7aff80" }}>SMK 5 Telkom Banda Aceh</span>
           <br />
-          <span style={{ color: "#374151" }}>Hello, I'm Chilhan aka Rayhan 👋</span>
+          <span style={{ color: "#374151" }}>Hello, I'm Muhammad Rayhan Ramadhan 👋</span>
         </p>
 
         {/* CTA buttons */}

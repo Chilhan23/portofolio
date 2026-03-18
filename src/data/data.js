@@ -9,6 +9,7 @@ export const projects = [
     title: "Perpustakaan Digital",
     desc: "Sistem manajemen perpustakaan digital yang memudahkan pengelolaan koleksi buku dan peminjaman secara online.",
     url: "https://perpus.chilhan.my.id/",
+    github: "https://github.com/Chilhan23/Perpus-Digital.git", // Ganti dengan URL repo aslimu
     tags: ["Web App", "Library", "CRUD"],
     live: true,
   },
@@ -16,6 +17,7 @@ export const projects = [
     title: "Suara Siswa",
     desc: "Platform aspirasi dan suara siswa untuk menyampaikan pendapat dan masukan kepada pihak sekolah secara digital.",
     url: "https://suarasiswa.chilhan.my.id/",
+    github: "https://github.com/Chilhan23/suarasiswa.git", // Ganti dengan URL repo aslimu
     tags: ["Platform", "Student", "Voice"],
     live: true,
   },
@@ -23,6 +25,7 @@ export const projects = [
     title: "WebChat Real-Time",
     desc: "Aplikasi chat real-time yang dibangun untuk seru-seruan. Fitur: pesan instan, typing indicator, user counter online, dan timestamp. Pesan tidak tersimpan — fresh setiap sesi!",
     url: null,
+    github: "https://github.com/Chilhan23/Web_Chat_SocketIo.git", // Ganti dengan URL repo aslimu
     tags: ["Node.js", "Express", "Socket.io", "Real-Time"],
     live: false,
   },
@@ -38,22 +41,21 @@ export const certificates = [
 
 export const skills = {
   web: [
-    { name: "HTML / CSS", level: 90 },
-    { name: "JavaScript", level: 78 },
-    { name: "PHP / Laravel", level: 72, color: "#1460cc" },
-    { name: "React", level: 65, color: "#0f4ba0" },
+    { name: "JavaScript", level: 70 },
+    { name: "Python", level: 70 },
+    { name: "Laravel", level: 78, color: "#1460cc" },
+    { name: "Next JS", level: 60, color: "#0f4ba0" },
     { name: "MySQL / Database", level: 75 },
   ],
   cyber: [
     { name: "Linux / CLI", level: 70 },
     { name: "Networking Basics", level: 65, color: "#1460cc" },
-    { name: "Web Security", level: 60, color: "#0f4ba0" },
+    { name: "Digital Forensic", level: 75, color: "#0f4ba0" },
     { name: "Git / GitHub", level: 80 },
-    { name: "Problem Solving", level: 88 },
   ],
 };
 
-export const techBadges = ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "React", "Git", "Linux", "Tailwind"];
+export const techBadges = ["JavaScript", "Laravel", "MySQL", "Next JS", "Digital Forensic", "Git", "Linux"];
 
 export const categoryColors = {
   "Web Dev": "#1a7aff",
