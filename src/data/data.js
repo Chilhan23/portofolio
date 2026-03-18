@@ -64,7 +64,7 @@ export const categoryColors = {
   "Backend": "#4fc3f7",
 };
 
-export const TYPEWRITER_TEXTS = ["Web Developer", "Cyber Enthusiast", "CTF Player"];
+export const TYPEWRITER_TEXTS = ["Web Developer", "CyberSec Enthusiast", "CTF Player"];
 
 export const containerStyle = {
   width: "100%",
