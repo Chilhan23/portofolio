@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, User, Briefcase, Terminal, Mail, Shield } from 'lucide-react';
@@ -11,6 +11,10 @@ import gotenImg from '../../assets/goten.jpg';
 
 export default function Layout() {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname]);
 
   const navLinks = [
     { name: 'Home', path: '/', icon: <Home className="w-4 h-4" /> },
