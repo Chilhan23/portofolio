@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Card({ children, className = '', hoverEffect = true, glow = false, ...props }) {
-  const baseClass = `glass-panel rounded-xl overflow-hidden transition-all duration-300 ${glow ? 'shadow-[0_0_20px_rgba(59,130,246,0.08)]' : ''} ${className}`;
+  const baseClass = `glass-panel rounded-xl overflow-hidden transition-[border-color,box-shadow] duration-300 ${glow ? 'shadow-[0_0_20px_rgba(59,130,246,0.08)]' : ''} ${className}`;
 
   if (hoverEffect) {
     return (

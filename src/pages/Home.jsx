@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
-import useTypewriter from '../hooks/useTypewriter';
+import TypewriterText from '../components/ui/TypewriterText';
 import useSEO from '../hooks/useSEO';
 import { personalInfo, projects } from '../data/data';
 import Button from '../components/ui/Button';
@@ -15,7 +15,6 @@ import gotenImg from '../assets/goten.jpg';
 
 export default function Home() {
   useSEO('Home', 'Muhammad Rayhan Ramadhan - Backend Developer | Security Enthusiast | DFIR Learner | CTF Player portfolio.');
-  const typewriterText = useTypewriter(personalInfo.titles, 80);
   const featuredProjects = projects.filter(p => p.featured).slice(0, 2);
 
   const containerVariants = {
@@ -67,8 +66,7 @@ export default function Home() {
             variants={itemVariants}
             className="h-8 md:h-10 flex items-center font-display text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent"
           >
-            <span>{typewriterText}</span>
-            <span className="w-[3px] h-6 md:h-8 bg-blue-500 ml-1" />
+            <TypewriterText texts={personalInfo.titles} speed={80} />
           </motion.div>
 
           <motion.p 
