@@ -25,13 +25,13 @@ export default function Layout() {
       {/* Static Background grid */}
       <AnimatedGrid />
       
-      {/* Glow overlays */}
-      <div className="glow-overlay w-[400px] h-[400px] top-[-100px] left-[-100px] bg-blue-500/5" />
-      <div className="glow-overlay w-[500px] h-[500px] bottom-[-100px] right-[-100px] bg-blue-500/5" />
+      {/* Glow overlays with pointer-events-none */}
+      <div className="glow-overlay pointer-events-none w-[400px] h-[400px] top-[-100px] left-[-100px] bg-blue-500/5" />
+      <div className="glow-overlay pointer-events-none w-[500px] h-[500px] bottom-[-100px] right-[-100px] bg-blue-500/5" />
 
       {/* Desktop Left Sidebar */}
       <aside className="hidden md:flex flex-col w-[260px] h-screen bg-[#0E1322] border-r border-white/5 fixed left-0 top-0 p-6 justify-between z-30">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 animate-none">
           {/* Profile Header */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10 shrink-0">
@@ -99,8 +99,8 @@ export default function Layout() {
         </div>
       </aside>
 
-      {/* Mobile Top Header */}
-      <header className="md:hidden fixed top-0 left-0 right-0 h-16 z-30 bg-[#0A0F1C]/90 backdrop-blur-md border-b border-white/5 px-6 flex items-center justify-between">
+      {/* Mobile Top Header - Solid background, no blurs */}
+      <header className="md:hidden fixed top-0 left-0 right-0 h-16 z-30 bg-[#0A0F1C] border-b border-white/5 px-6 flex items-center justify-between pointer-events-auto">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full overflow-hidden border border-white/10 shrink-0">
             <img src={gotenImg} alt="Muhammad Rayhan Ramadhan Profile Picture" className="w-full h-full object-cover" />
@@ -112,8 +112,8 @@ export default function Layout() {
         </div>
       </header>
 
-      {/* Mobile Bottom Bar Navigation */}
-      <nav className="md:hidden fixed bottom-4 inset-x-4 z-40 bg-[#0E1322] border border-white/10 rounded-xl px-4 py-2 flex items-center justify-around shadow-2xl">
+      {/* Mobile Bottom Bar Navigation - Solid background, no blurs */}
+      <nav className="md:hidden fixed bottom-4 inset-x-4 z-40 bg-[#0E1322] border border-white/10 rounded-xl px-4 py-2 flex items-center justify-around shadow-2xl pointer-events-auto">
         {navLinks.map((link) => (
           <NavLink
             key={link.name}
@@ -130,16 +130,16 @@ export default function Layout() {
         ))}
       </nav>
 
-      {/* Content wrapper */}
-      <div className="flex-1 md:ml-[260px] flex flex-col min-h-screen">
-        <main className="flex-grow p-6 md:p-12 pb-24 md:pb-12 z-10 relative max-w-5xl w-full mx-auto flex flex-col">
+      {/* Main offset section - Fixed height conflict on mobile */}
+      <div className="flex-1 md:ml-[260px] flex flex-col">
+        <main className="flex-grow pt-24 pb-28 md:pt-12 md:pb-12 px-6 md:px-12 z-10 relative max-w-5xl w-full mx-auto flex flex-col">
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname}
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.15 }}
               className="w-full flex-grow flex flex-col"
             >
               <Outlet />
