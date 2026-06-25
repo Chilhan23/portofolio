@@ -117,6 +117,8 @@ export default function Projects() {
                     src={p.imgSrc} 
                     alt={p.title} 
                     loading="lazy" 
+                    width={640} 
+                    height={360} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103" 
                   />
                   <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors duration-300" />

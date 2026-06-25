@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 export default function ParticleBg() {
   const particles = useMemo(() => {
-    return Array.from({ length: 20 }).map((_, i) => ({
+    return Array.from({ length: 8 }).map((_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
       top: `${Math.random() * 100}%`,
@@ -25,6 +25,7 @@ export default function ParticleBg() {
             height: `${p.size}px`,
             animationDelay: p.delay,
             animationDuration: p.duration,
+            willChange: 'transform',
           }}
         />
       ))}

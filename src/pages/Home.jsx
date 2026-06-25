@@ -194,7 +194,15 @@ export default function Home() {
             <Card key={idx} hoverEffect className="flex flex-col p-5 h-full gap-4">
               {p.imgSrc && (
                 <div className="aspect-[16/9] w-full overflow-hidden rounded-lg bg-slate-950 border border-white/5">
-                  <img src={p.imgSrc} alt={p.title} loading="lazy" className="w-full h-full object-cover" />
+                  <img 
+                    src={p.imgSrc} 
+                    alt={p.title} 
+                    loading="eager" 
+                    fetchPriority="high" 
+                    width={640} 
+                    height={360} 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
               )}
               <div className="flex flex-col gap-2 flex-grow">

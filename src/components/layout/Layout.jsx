@@ -21,17 +21,23 @@ export default function Layout() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0A0F1C] relative text-white flex flex-col md:flex-row overflow-x-hidden">
+    <div className="min-h-screen bg-[#0A0F1C] relative text-white overflow-x-hidden">
       {/* Static Background grid */}
       <AnimatedGrid />
       
       {/* Glow overlays with pointer-events-none */}
-      <div className="glow-overlay pointer-events-none w-[400px] h-[400px] top-[-100px] left-[-100px] bg-blue-500/5" />
-      <div className="glow-overlay pointer-events-none w-[500px] h-[500px] bottom-[-100px] right-[-100px] bg-blue-500/5" />
+      <div 
+        className="glow-overlay pointer-events-none w-[400px] h-[400px] top-[-100px] left-[-100px] bg-blue-500/5" 
+        style={{ willChange: 'transform', transform: 'translateZ(0)' }} 
+      />
+      <div 
+        className="glow-overlay pointer-events-none w-[500px] h-[500px] bottom-[-100px] right-[-100px] bg-blue-500/5" 
+        style={{ willChange: 'transform', transform: 'translateZ(0)' }} 
+      />
 
       {/* Desktop Left Sidebar */}
       <aside className="hidden md:flex flex-col w-[260px] h-screen bg-[#0E1322] border-r border-white/5 fixed left-0 top-0 p-6 justify-between z-30">
-        <div className="flex flex-col gap-8 animate-none">
+        <div className="flex flex-col gap-8">
           {/* Profile Header */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10 shrink-0">
@@ -100,7 +106,7 @@ export default function Layout() {
       </aside>
 
       {/* Mobile Top Header - Solid background, no blurs */}
-      <header className="md:hidden fixed top-0 left-0 right-0 h-16 z-30 bg-[#0A0F1C] border-b border-white/5 px-6 flex items-center justify-between pointer-events-auto">
+      <header className="md:hidden fixed top-0 left-0 right-0 h-16 z-30 bg-[#0A0F1C] border-b border-white/5 px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full overflow-hidden border border-white/10 shrink-0">
             <img src={gotenImg} alt="Muhammad Rayhan Ramadhan Profile Picture" className="w-full h-full object-cover" />
@@ -113,7 +119,7 @@ export default function Layout() {
       </header>
 
       {/* Mobile Bottom Bar Navigation - Solid background, no blurs */}
-      <nav className="md:hidden fixed bottom-4 inset-x-4 z-40 bg-[#0E1322] border border-white/10 rounded-xl px-4 py-2 flex items-center justify-around shadow-2xl pointer-events-auto">
+      <nav className="md:hidden fixed bottom-4 inset-x-4 z-40 bg-[#0E1322] border border-white/10 rounded-xl px-4 py-2 flex items-center justify-around shadow-2xl">
         {navLinks.map((link) => (
           <NavLink
             key={link.name}
@@ -130,8 +136,8 @@ export default function Layout() {
         ))}
       </nav>
 
-      {/* Main offset section - Fixed height conflict on mobile */}
-      <div className="flex-1 md:ml-[260px] flex flex-col">
+      {/* Content offset container using standard padding-left on desktop */}
+      <div className="md:pl-[260px] flex flex-col min-h-screen">
         <main className="flex-grow pt-24 pb-28 md:pt-12 md:pb-12 px-6 md:px-12 z-10 relative max-w-5xl w-full mx-auto flex flex-col">
           <AnimatePresence mode="wait">
             <motion.div

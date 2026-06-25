@@ -5,14 +5,14 @@ import certWebHacking from "../assets/certificates/web-hacking-itbox.jpg";
 import certMobilePentest from "../assets/certificates/mobile-pentest-itbox.jpg";
 
 // Project Screenshots
-import imgKlikdata from "../assets/projects/klikdata.png";
-import imgMbg from "../assets/projects/mbg.png";
-import imgWebchat from "../assets/projects/webchat.png";
-import imgSuarasiswa from "../assets/projects/suarasiswa.png";
-import imgPerpus from "../assets/projects/perpis.png";
+import imgKlikdata from "../assets/projects/klikdata.webp";
+import imgMbg from "../assets/projects/mbg.webp";
+import imgWebchat from "../assets/projects/webchat.webp";
+import imgSuarasiswa from "../assets/projects/suarasiswa.webp";
+import imgPerpus from "../assets/projects/perpis.webp";
 
 // Journey Logos
-import logoKlikdata from "../assets/projects/logo.jpg";
+import logoKlikdata from "../assets/projects/logo.webp";
 
 export const personalInfo = {
   name: "Muhammad Rayhan Ramadhan",
